@@ -7,6 +7,8 @@ class CompleteOrder{
     place_order(){
         // Check if redirected to the cart page
         cy.url().should('include', '/cart');
+        // Check if the "Place Order" button is present
+        cy.get('button:contains("Place Order")').should('exist');
         // Click on the "Place Order" button
         cy.contains('button', 'Place Order').click();
     }
@@ -20,6 +22,9 @@ class CompleteOrder{
         cy.get('input.chkAgree[type="checkbox"]').check();
         // Click the "Proceed" button
         cy.contains('button', 'Proceed').click();
+
+        // Verify that i am at the home page
+        cy.url().should('include', 'seleniumPractise');
     }
     
 
