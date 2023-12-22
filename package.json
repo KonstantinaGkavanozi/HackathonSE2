@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "npx cypress run"
+=======
+    
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 66b8751d975db55c1ef8b053f66cece7695720c7
   },
   "keywords": [],
   "author": "",
