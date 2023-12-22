@@ -13,6 +13,7 @@ describe('User Story 1', () => {
             ln.chooseProduct(data.product)
             ln.increaseQuantity(data.product);
             ln.addToCart(data.product);
+            ln.openCart();
         })
 
         
